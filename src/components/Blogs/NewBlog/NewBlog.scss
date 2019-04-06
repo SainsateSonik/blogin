@@ -1,0 +1,81 @@
+@import "../../../sass/variables.scss";
+
+.create-blog {
+
+    form {
+
+        textarea {
+            width: 100%;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            color: #333;
+            padding: 5px;
+            resize: none;
+    
+            &:focus {
+                outline: none;
+                border: 1px solid $secondary-color;
+            }
+        }
+
+        div {
+            position: relative;
+
+            button {
+                position: absolute;
+                right: 0;
+                background: transparent;
+                border: 1px solid transparent;
+                border-radius: 5px;
+                padding: 5px 10px;
+                font-size: 0.9em;
+                color: $secondary-color;
+                font-weight: 600;
+                transition: 0.2s;
+                cursor: pointer;
+                
+                &:focus {
+                    outline: none;
+                }
+    
+                .fas {
+                    position: relative;
+                    bottom: 0.8px;
+                    font-size: 0.8em;
+                }
+    
+                &:hover {
+                    color: #fff;
+                    background: linear-gradient(to bottom, $secondary-color, $primary-color);
+                }
+            }
+        }
+        
+    }
+}
+
+@media(max-width: 700px) {
+    .create-blog {
+
+        form{
+
+            textarea {
+                border-bottom-left-radius: 0;
+                border-bottom-right-radius: 0;
+            }
+
+            div {
+                top: -5px;
+
+                button {
+                    left: 0;
+                    width: 100%;
+                    border-top-left-radius: 0;
+                    border-top-right-radius: 0;
+                    color: #fff;
+                    background: linear-gradient(to bottom, $secondary-color, $primary-color);
+                }
+            }
+        }
+    }
+}

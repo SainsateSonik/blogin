@@ -1,0 +1,128 @@
+@import "../../sass/variables.scss";
+
+.navbar {
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+    height: $nav-height;
+    padding: 0 $container-padding;
+    color: #fff;
+    background: linear-gradient(to bottom, $secondary-color, $primary-color);
+
+    .brand {
+        position: absolute;
+        font-size: 1.3em;
+        font-weight: 600;
+        top: 50%;
+        letter-spacing: 2px;
+        transform: translateY(-50%);
+        cursor: default;
+        transition: 0.2s;
+    }
+
+    .hamburger-icon-bars {
+        display: none;
+    }
+
+    .nav-links {
+        position: absolute;
+        font-size: 0.9em;
+        right: $container-padding;
+        top: 50%;
+        transform: translateY(-50%);
+        display: flex;
+
+        li {
+            position: relative;
+            list-style: none;
+            cursor: pointer;
+
+            &::before {
+                content: "";
+                position: absolute;
+                bottom: -5px;
+                height: 1px;
+                width: 0;
+                background-color: #fff;
+                transition: 0.2s;
+            }
+
+            &:hover::before {
+                width: 100%;
+            }
+
+            & ~ li {
+                margin-left: 40px;
+            }
+        }
+    }
+}
+
+@media(max-width: 1000px) {
+    .navbar {
+        padding: 0 10vw;
+
+        .nav-links {
+            display: flex;
+            right: 10vw;
+        }
+    }
+}
+
+@media(max-width: 700px) {
+    .navbar {
+        padding: 0 10vw;
+
+        .hamburger-icon-bars {
+            display: block;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            right: 10vw;
+        }
+
+        .nav-links {
+            display: none;
+        }
+        
+        // .nav-links {
+        //     background-color: rgba(0, 0, 0, 0.938);
+        //     width: 60vw;
+        //     height: 100vh;
+        //     right: 0;
+        //     top: 50vh;
+        //     display: flex;
+        //     flex-direction: column;
+        //     align-items: center;
+        //     justify-content: center;
+
+        //     li {
+        //         display: block;
+        //         margin: 20px;
+        //         font-size: 1.5em;
+
+        //         & ~ li {
+        //             margin-left: 20px;
+        //         }
+        //     }
+        // }
+    }
+}
+
+@media(max-width: 500px) {
+    .navbar {
+        padding: 0 5vw;
+
+        .hamburger-icon-bars {
+            display: block;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-40%);
+            right: 5vw;
+        }
+
+        .nav-links {
+            display: none;
+        }
+    }
+}

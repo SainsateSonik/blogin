@@ -1,0 +1,59 @@
+@import "../../../../../sass/variables.scss";
+
+.info-and-actions{
+    position: relative;
+    
+
+    .created-on {
+        position: relative;
+        top: -1px;
+        font-size: 0.65em;
+        color: #999;
+        padding-bottom: 5px;
+        border-bottom: 1px solid rgb(240, 240, 240);
+    }
+    
+    .actions {
+        position: absolute;
+        right: 0;
+        top: 0;
+        font-size: 1em;
+
+        div{
+            position: relative;
+            top: -5px;
+
+            .far,
+            .fas {
+                cursor: pointer;
+                padding: 5px;
+                border-top: 1px solid transparent;
+                border-bottom: 1px solid transparent;
+                transition: 0.1s;
+
+                &.edit,
+                &.save {
+                    &:hover {
+                        color: $secondary-color;
+                        border-top: 1px solid $secondary-color;
+                        border-bottom: 1px solid $secondary-color;
+                    }
+                }
+
+                &.remove,
+                &.discard {
+                    &:hover {
+                        color: $danger-color;
+                        border-top: 1px solid $danger-color;
+                        border-bottom: 1px solid $danger-color;
+                    }
+                }
+            }
+
+            .far ~ .far,
+            .fas ~ .fas {
+                margin-left: 5px;
+            }
+        }
+    }
+}

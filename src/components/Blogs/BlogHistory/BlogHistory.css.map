@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,aAAa,CAAC;EACV,UAAU,EAAE,IAAI;EAChB,OAAO,EAAE,IAAI;EACb,qBAAqB,EAAE,cAAc;EACrC,QAAQ,EAAE,MAAM;CACnB;;AAED,MAAM,EAAC,SAAS,EAAE,MAAM;EAEpB,AAAA,aAAa,CAAC;IACV,OAAO,EAAE,IAAI;IACb,cAAc,EAAE,MAAM;GACzB",
+    "sources": [
+        "BlogHistory.scss"
+    ],
+    "names": [],
+    "file": "BlogHistory.css"
+}

@@ -1,0 +1,37 @@
+@import "../../sass/variables.scss";
+
+.blogs-container {
+    color: #444;
+    position: relative;
+    top: $nav-height;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50vw;
+
+    .blog-wrapper {
+        position: absolute;
+        top: 40px;
+        width: 100%;
+    }
+}
+
+
+@media(max-width: 1000px) {
+    .blogs-container {
+        width: 80vw;
+
+        .blog-wrapper  {
+            top: 20px;
+        }
+    }
+}
+
+@media(max-width: 500px) {
+    .blogs-container {
+        width: 90vw;
+
+        .blog-wrapper  {
+            top: 20px;
+        }
+    }
+}

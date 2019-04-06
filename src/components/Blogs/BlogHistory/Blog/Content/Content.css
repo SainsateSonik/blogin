@@ -1,0 +1,23 @@
+.blog-content {
+  margin-top: 15px;
+  width: 100%;
+}
+
+.blog-content .read-only {
+  font-size: 0.9em;
+}
+
+.blog-content textarea {
+  width: 100%;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  color: #333;
+  padding: 5px;
+  resize: none;
+}
+
+.blog-content textarea:focus {
+  outline: none;
+  border: 1px solid #005eb6;
+}
+/*# sourceMappingURL=Content.css.map */

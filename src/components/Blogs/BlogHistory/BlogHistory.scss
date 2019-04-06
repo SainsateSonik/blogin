@@ -1,0 +1,14 @@
+.blog-history {
+    margin-top: 60px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 0 10px;
+}
+
+@media(max-width: 1000px) {
+    
+    .blog-history {
+        display: flex;
+        flex-direction: column;
+    }
+}

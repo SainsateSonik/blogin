@@ -1,0 +1,34 @@
+.blogs-container {
+  color: #444;
+  position: relative;
+  top: 60px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 50vw;
+}
+
+.blogs-container .blog-wrapper {
+  position: absolute;
+  top: 40px;
+  width: 100%;
+}
+
+@media (max-width: 1000px) {
+  .blogs-container {
+    width: 80vw;
+  }
+  .blogs-container .blog-wrapper {
+    top: 20px;
+  }
+}
+
+@media (max-width: 500px) {
+  .blogs-container {
+    width: 90vw;
+  }
+  .blogs-container .blog-wrapper {
+    top: 20px;
+  }
+}
+/*# sourceMappingURL=Blogs.css.map */

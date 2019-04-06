@@ -1,0 +1,56 @@
+.info-and-actions {
+  position: relative;
+}
+
+.info-and-actions .created-on {
+  position: relative;
+  top: -1px;
+  font-size: 0.65em;
+  color: #999;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.info-and-actions .actions {
+  position: absolute;
+  right: 0;
+  top: 0;
+  font-size: 1em;
+}
+
+.info-and-actions .actions div {
+  position: relative;
+  top: -5px;
+}
+
+.info-and-actions .actions div .far,
+.info-and-actions .actions div .fas {
+  cursor: pointer;
+  padding: 5px;
+  border-top: 1px solid transparent;
+  border-bottom: 1px solid transparent;
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
+}
+
+.info-and-actions .actions div .far.edit:hover, .info-and-actions .actions div .far.save:hover,
+.info-and-actions .actions div .fas.edit:hover,
+.info-and-actions .actions div .fas.save:hover {
+  color: #005eb6;
+  border-top: 1px solid #005eb6;
+  border-bottom: 1px solid #005eb6;
+}
+
+.info-and-actions .actions div .far.remove:hover, .info-and-actions .actions div .far.discard:hover,
+.info-and-actions .actions div .fas.remove:hover,
+.info-and-actions .actions div .fas.discard:hover {
+  color: #a50000;
+  border-top: 1px solid #a50000;
+  border-bottom: 1px solid #a50000;
+}
+
+.info-and-actions .actions div .far ~ .far,
+.info-and-actions .actions div .fas ~ .fas {
+  margin-left: 5px;
+}
+/*# sourceMappingURL=InfoAndActions.css.map */

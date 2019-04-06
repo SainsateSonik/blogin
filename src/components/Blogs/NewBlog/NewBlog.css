@@ -1,0 +1,68 @@
+.create-blog form textarea {
+  width: 100%;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  color: #333;
+  padding: 5px;
+  resize: none;
+}
+
+.create-blog form textarea:focus {
+  outline: none;
+  border: 1px solid #005eb6;
+}
+
+.create-blog form div {
+  position: relative;
+}
+
+.create-blog form div button {
+  position: absolute;
+  right: 0;
+  background: transparent;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  padding: 5px 10px;
+  font-size: 0.9em;
+  color: #005eb6;
+  font-weight: 600;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+.create-blog form div button:focus {
+  outline: none;
+}
+
+.create-blog form div button .fas {
+  position: relative;
+  bottom: 0.8px;
+  font-size: 0.8em;
+}
+
+.create-blog form div button:hover {
+  color: #fff;
+  background: -webkit-gradient(linear, left top, left bottom, from(#005eb6), to(#012bb6));
+  background: linear-gradient(to bottom, #005eb6, #012bb6);
+}
+
+@media (max-width: 700px) {
+  .create-blog form textarea {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+  .create-blog form div {
+    top: -5px;
+  }
+  .create-blog form div button {
+    left: 0;
+    width: 100%;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    color: #fff;
+    background: -webkit-gradient(linear, left top, left bottom, from(#005eb6), to(#012bb6));
+    background: linear-gradient(to bottom, #005eb6, #012bb6);
+  }
+}
+/*# sourceMappingURL=NewBlog.css.map */
